@@ -74,7 +74,7 @@ body {
 }
 
 input {
-    border: 1px solid #d3d0d0;
+    border: 1px solid #dfdddd;
     border-radius: 3px;
     padding: 2%;
 }
@@ -195,7 +195,7 @@ a {
     font-weight: 500;
     color: #757575;
     border-radius: 2px;
-    padding: 4px;
+    padding: 6px 11px;
 }
 
 @media screen and (max-width: 900px) {
@@ -214,6 +214,6 @@ a {
     }
 
     .footer-right {
-        width: 60%;
+        width: 65%;
     }
 }
