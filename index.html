@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework15.2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <form action="" class="form-container">
+            <div class="logo font">
+                <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+            </div>
+            <h1 class="title font">Создайте аккаунт Google</h1>
+            <p>Перейти в Gmail</p>
+            <div class="user-name">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+            </div>
+            <div class="mail-container">
+                <input type="text" name="mail" id="mail" placeholder="Имя пользователя">
+                <span>@gmail.com</span>
+            </div>
+            <p class="footnote">Можно использовать буквы латинского алфавита, цифры и точки.</p>
+            <div class="user-password">
+                <input type="password" name="password" id="password" placeholder="Пароль">
+                <input type="password" name="repeat-password" id="repeat-password" placeholder="Подтвердить">
+            </div>
+            <p class="footnote">Пароль должен содержать не менее восьми знаков, включать буквы, цифры и специальные
+                символы
+            </p>
+            <div class="checkbox">
+                <input type="checkbox" name="show-password" id="show-password">
+                <label for="show-password">Показать пароль</label></div>
+            <div class="login-link">
+                <a class="enter font" href="#">Войти</a>
+                <a class="next font" href="#">Далее</a>
+            </div>
+        </form>
+        <div class="image-container">
+            <img src="/assets/images/account.svg" alt="google servises">
+            <p class="image-text">Один аккаунт – для всех сервисов Google.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-left">
+            <select name="language" id="languages">
+                <option value="russian">Русский</option>
+                <option value="ukrainian">Украинский</option>
+                <option value="english">Английский</option>
+            </select>
+        </div>
+        <div class="footer-right">
+            <a href="https://support.google.com/accounts?hl=ru#topic=3382296" target="_blank">Справка</a>
+            <a href="https://policies.google.com/privacy?gl=RU&hl=ru" target="_blank">Конфиденциальность</a>
+            <a href="https://policies.google.com/terms?gl=RU&hl=ru" target="_blank">Условия</a>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
 </body>
+
 </html>
