@@ -21,18 +21,21 @@
             <h1 class="title font">Создайте аккаунт Google</h1>
             <p>Перейти в Gmail</p>
             <div class="user-name">
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="Фамилия">
+                <input type="text" placeholder="Имя" id="userName">
+                <input type="text" placeholder="Фамилия" id="userSecondName">
             </div>
+            <div class="user-name-error" id="userError"></div>
             <div class="mail-container">
                 <input type="text" name="mail" id="mail" placeholder="Имя пользователя">
                 <span>@gmail.com</span>
             </div>
+            <div class="user-name-error" id="userLoginError"></div>
             <p class="footnote">Можно использовать буквы латинского алфавита, цифры и точки.</p>
             <div class="user-password">
                 <input type="password" name="password" id="password" placeholder="Пароль">
-                <input type="password" name="repeat-password" id="repeat-password" placeholder="Подтвердить">
+                <input type="password" name="repeat-password" id="repeatPassword" placeholder="Подтвердить">
             </div>
+            <div class="user-name-error" id="userPasswordError"></div>
             <p class="footnote">Пароль должен содержать не менее восьми знаков, включать буквы, цифры и специальные
                 символы
             </p>
@@ -41,7 +44,7 @@
                 <label for="show-password">Показать пароль</label></div>
             <div class="login-link">
                 <a class="enter font" href="#">Войти</a>
-                <a class="next font" href="#">Далее</a>
+                <a class="next font" href="#" id="checkFormName">Далее</a>
             </div>
         </form>
         <div class="image-container">

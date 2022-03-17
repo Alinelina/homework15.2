@@ -16,6 +16,7 @@ body {
     justify-content: center;
 }
 
+
 .container {
     display: flex;
     justify-content: center;
@@ -79,6 +80,10 @@ input {
     padding: 2%;
 }
 
+input:focus {
+    outline: 0;
+}
+
 .user-name,
 .user-password {
     display: flex;
@@ -86,7 +91,6 @@ input {
 }
 
 .user-name {
-    margin-bottom: 20px;
     margin-top: 40px;
 }
 
@@ -103,6 +107,7 @@ input {
     border: 1px solid #d3d0d0;
     border-radius: 3px;
     padding: 2%;
+    margin-top: 20px;
 }
 
 .footnote {
@@ -196,6 +201,13 @@ a {
     color: #757575;
     border-radius: 2px;
     padding: 6px 11px;
+}
+
+/* ==== error ====================== */
+
+.user-name-error {
+    color: #ea4335;
+    padding-left: 6px;
 }
 
 @media screen and (max-width: 900px) {
