@@ -206,8 +206,9 @@ a {
 /* ==== error ====================== */
 
 .user-name-error {
+    font-size: small;
     color: #ea4335;
-    padding-left: 6px;
+    padding: 5px 0 0 6px;
 }
 
 @media screen and (max-width: 900px) {
