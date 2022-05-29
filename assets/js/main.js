@@ -119,4 +119,4 @@ const showOrHideRepeatPassword = () => {
 togglePassword.addEventListener('change', showOrHidePassword);
 togglePassword.addEventListener('change', showOrHideRepeatPassword);
 
-checkFormName.addEventListener('click', checkPasswordMatch);
+checkFormName.addEventListener('click', checkPassword);
