@@ -4,9 +4,10 @@ let select = (sender) => {
 
 // проверка полей имен
 
-let userName = document.getElementById('userName');
-let userSecondName = document.getElementById('userSecondName');
-let errorNameMessage = document.getElementById('userError');
+const userName = document.getElementById('userName');
+const userSecondName = document.getElementById('userSecondName');
+const errorNameMessage = document.getElementById('userError');
+const checkFormName = document.getElementById('checkFormName');
 
 let checkName = () => {
     if (userName.value == '' && userSecondName.value == '') {
@@ -68,7 +69,8 @@ let validPassword = () => {
             userPasswordError.innerHTML = '';
         } else {
             repeatPassword.style.borderColor = '#ea4335';
-            userPasswordError.innerHTML = 'Пароль должен содержать не менее восьми знаков, включать буквы, цифры и специальные символы';
+            userPasswordError.innerHTML = `Пароль должен содержать не менее восьми знаков,
+            включать буквы, цифры и специальные символы`;
         }
     }
 };
@@ -82,7 +84,7 @@ let checkPassword = () => {
     } else if (repeatPassword.value == '') {
         userPasswordError.innerHTML = 'Подтвердите пароль';
         repeatPassword.style.borderColor = '#ea4335';
-    } else if (password.value !== repeatPassword.value) {
+    } else if (userPassword.value.value !== repeatPassword.value) {
         userPasswordError.innerHTML = 'Пароли не совпадают. Повторите попытку.';
     } else {
         userPasswordError.innerHTML = '';
